@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Falling Emojis - Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="index"> 
+    <div id="nameForm">
+        <h1>Welcome to Falling Emojis!</h1>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <!-- Updated the button ID to startButton -->
+        <button id="startButton">Play Game</button>
+        <label for="level">Select Level:</label>
+        <select id="level" name="level">
+            <option value="easy">Easy</option>
+            <option value="hard">Hard</option> 
+        </select>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Updated JavaScript to attach the event to the correct button -->
+    <script src="./js/home.js"></script>
+    
+</body>
+</html>

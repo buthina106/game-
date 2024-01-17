@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Emojis - Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body  class="gameground">
+    <div id="gameContainer" style="display: none;">
+           <h2 id="welcomeMessage"></h2>
+        <div id="gameBoard" class="game-board"></div>
+        <div id="gameInfo"> 
+            <div> <p id="fontscore">Score: <span id="score">0</span></p> </div>
+            <div> <p id="emoji">Next Emoji: <span id="nextEmoji">😃</span></p></div>
+            <div id="timer-container" class="timer-container">
+                <div id="timer" class="timer">
+                    <span id="timer-value">00:00</span>
+                </div>
+                <div class="timer-label"></div>
+            </div>
+        </div>
+        <div class="emoji-counts">
+            <p>Emoji Counts:</p>
+            <div class="emoji-count" id="emojiCount1">😍: 0</div>
+            <div class="emoji-count" id="emojiCount2">😃: 0</div>
+            <div class="emoji-count" id="emojiCount3">🤔: 0</div>
+            <div class="emoji-count" id="emojiCount4">🙄: 0</div>
+            <div class="emoji-count" id="emojiCount5">😜: 0</div>
+        </div>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/gameSetup.js"></script>
+    <script src="./js/scoreManagement.js"></script>
+    <script src="./js/emojiTetromino.js"></script>
+    <script src="./js/emojiTetrisGame.js"></script>
+</body>
+</html>
